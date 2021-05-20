@@ -7,9 +7,9 @@ So I present to you Gladys a fierce working dog that will happily bite the heels
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Features.png)
 
-- A new adorable corgi follower named Gladys
-- A short quest to aquire the new pet
-- A unique model to make her stand out from the rest of Skyrim's dogs
+- A new adorable corgi follower named Gladys.
+- A short quest to aquire the new pet.
+- A unique model to make her stand out from the rest of Skyrim's dogs.
 - Fully re-voiced sound effects using audio from my own pet corgis!
  
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Credits.png)
