@@ -1,4 +1,4 @@
-Scriptname DES_FetchDogScript extends ReferenceAlias  
+Scriptname DES_FetchDogScript extends ReferenceAlias  Conditional
 
 ;-- Properties --------------------------------------
 quest property SelfQuest auto

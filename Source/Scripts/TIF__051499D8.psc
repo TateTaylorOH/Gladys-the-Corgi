@@ -1,5 +1,5 @@
 ;BEGIN FRAGMENT CODE - Do not edit anything between this and the end comment
-;NEXT FRAGMENT INDEX 1
+;NEXT FRAGMENT INDEX 2
 Scriptname TIF__051499D8 Extends TopicInfo Hidden
 
 ;BEGIN FRAGMENT Fragment_0
@@ -13,6 +13,17 @@ Dog.ForceRefTo(akSpeaker as ObjectReference)
 EndFunction
 ;END FRAGMENT
 
+;BEGIN FRAGMENT Fragment_1
+Function Fragment_1(ObjectReference akSpeakerRef)
+Actor akSpeaker = akSpeakerRef as Actor
+;BEGIN CODE
+type.value = 11 as Float
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
 referencealias property Dog  Auto
+
+globalvariable property type auto

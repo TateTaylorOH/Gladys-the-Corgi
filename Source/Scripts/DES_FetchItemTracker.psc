@@ -1,14 +1,16 @@
-Scriptname DES_FetchItemTracker extends Quest  
+Scriptname DES_FetchItemTracker extends Quest Conditional
 
 ;-- Properties --------------------------------------
+
 Int property NumItems auto
-Int property FoundSomething = 0 auto conditional
 referencealias property Dog auto
 message property Doggy auto
 form property Item auto
-Bool property IsSearching = false auto conditional
 
 ;-- Variables ---------------------------------------
+
+Int property FoundSomething = 0 auto conditional
+Bool property IsSearching = false auto conditional
 
 ;-- Functions ---------------------------------------
 
