@@ -1,5 +1,7 @@
 Scriptname DES_GladysFollowerFramework extends Quest  
 
+;-- Properties --------------------------------------
+
 Actor Property PlayerREF Auto
 ReferenceAlias Property FollowerAlias Auto
 Faction Property DismissedFollowerFaction Auto
@@ -14,6 +16,10 @@ SetHirelingRehire Property HirelingRehireScript Auto
 
 ;Property to tell follower to say dismissal line
 Int Property iFollowerDismiss Auto Conditional
+
+;-- Variables ---------------------------------------
+
+;-- Functions ---------------------------------------
 
 Function SetFollower(ObjectReference FollowerRef)
      actor FollowerActor = FollowerRef as Actor

@@ -1,8 +1,14 @@
 Scriptname DES_GladysDialogQuestAliasScript extends ReferenceAlias  
 
+;-- Properties --------------------------------------
+
 Faction Property CurrentHireling Auto
 Message Property FollowerDismissMessage  Auto
 Actor Property PlayerREF Auto
+
+;-- Variables ---------------------------------------
+
+;-- Functions ---------------------------------------
 
 Event OnUpdateGameTime()
      ;kill the update if the follower isn't waiting anymore
