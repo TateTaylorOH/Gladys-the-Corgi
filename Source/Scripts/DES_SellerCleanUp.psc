@@ -1,14 +1,16 @@
-Scriptname DES_SellerCleanUp  Extends ReferenceAlias
-Event OnLocationChange(Location EastEmpireDock, Location akNewLoc)
-	Utility.Wait(600)
-		If(SellerQuest.GetStageDone(10))
-			Seller.Disable()
-			SellerQuest.SetStage(255)
-		EndIf
-EndEvent
+scriptName DES_SellerCleanUp extends ReferenceAlias
 
-Quest Property SellerQuest  Auto  
+function OnLocationChange(location EastEmpireDock, location akNewLoc)
 
-ObjectReference Property Seller  Auto  
+	utility.Wait(600 as Float)
+	if SellerQuest.GetStageDone(10)
+		Seller.Disable
+		SellerQuest.SetStage(255)
+	endIf
+endFunction
 
-Location Property EastEmpireDock  Auto
+location property EastEmpireDock auto
+
+quest property SellerQuest auto
+
+objectreference property Seller auto
