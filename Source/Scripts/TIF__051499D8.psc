@@ -2,6 +2,15 @@
 ;NEXT FRAGMENT INDEX 2
 Scriptname TIF__051499D8 Extends TopicInfo Hidden
 
+;BEGIN FRAGMENT Fragment_1
+Function Fragment_1(ObjectReference akSpeakerRef)
+Actor akSpeaker = akSpeakerRef as Actor
+;BEGIN CODE
+Type.SetValue(11)
+;END CODE
+EndFunction
+;END FRAGMENT
+
 ;BEGIN FRAGMENT Fragment_0
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
@@ -9,15 +18,6 @@ Actor akSpeaker = akSpeakerRef as Actor
 Dog.ForceRefTo(akSpeaker as ObjectReference)
 (self.GetOwningQuest() as DES_FetchItemTracker).IsSearching = true
 (self.GetOwningQuest() as DES_FetchItemTracker).RegisterForSingleUpdate(25.0000)
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_1
-Function Fragment_1(ObjectReference akSpeakerRef)
-Actor akSpeaker = akSpeakerRef as Actor
-;BEGIN CODE
-type.value = 11 as Float
 ;END CODE
 EndFunction
 ;END FRAGMENT

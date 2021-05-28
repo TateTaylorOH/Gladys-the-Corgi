@@ -10,11 +10,11 @@ akSpeaker.DropObject((self.GetOwningQuest() as DES_FetchItemTracker).Item, (self
 (self.GetOwningQuest() as DES_FetchItemTracker).FoundSomething = 0
 (self.GetOwningQuest() as DES_FetchItemTracker).IsSearching = false
 (self.GetOwningQuest() as DES_FetchItemTracker).UnregisterForUpdate()
-Dog.Clear()
+Type.SetValue(0)
 ;END CODE
 EndFunction
 ;END FRAGMENT
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
-referencealias property Dog auto
+globalvariable property Type auto
