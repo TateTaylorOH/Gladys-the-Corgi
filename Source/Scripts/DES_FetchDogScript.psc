@@ -3,6 +3,7 @@ Scriptname DES_FetchDogScript extends ReferenceAlias  Conditional
 ;-- Properties --------------------------------------
 
 quest property SelfQuest auto
+globalvariable property Type auto
 
 ;-- Variables ---------------------------------------
 
@@ -21,7 +22,7 @@ function OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjecti
 		if akAggressor
 			(SelfQuest as DES_FetchItemTracker).UnregisterForUpdate()
 			(SelfQuest as DES_FetchItemTracker).IsSearching = false
-			self.Clear()
+			Type.SetValue(0)
 		endIf
 	endIf
 endFunction
