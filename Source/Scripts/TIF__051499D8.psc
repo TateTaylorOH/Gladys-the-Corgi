@@ -18,6 +18,7 @@ Actor akSpeaker = akSpeakerRef as Actor
 Dog.ForceRefTo(akSpeaker as ObjectReference)
 (self.GetOwningQuest() as DES_FetchItemTracker).IsSearching = true
 (self.GetOwningQuest() as DES_FetchItemTracker).RegisterForSingleUpdate(25.0000)
+Gladys.EvaluatePackage()
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -27,3 +28,5 @@ EndFunction
 referencealias property Dog  Auto
 
 globalvariable property type auto
+
+Actor Property Gladys  Auto  
