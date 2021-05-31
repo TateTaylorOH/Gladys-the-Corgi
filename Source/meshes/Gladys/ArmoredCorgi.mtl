@@ -1,0 +1,18 @@
+
+newmtl Material.000001
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.814206 1 0.502541
+d 1
+Ns 30
+map_Kd Textures\Gladys\SopaCorgiArmor.dds
+map_Kn Textures\Gladys\SopaCorgiArmor_n.dds
+
+newmtl Material.000414
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+d 1
+Ns 31
+map_Kd Textures\Gladys\corgi.dds
+map_Kn Textures\Gladys\corgi_n.dds

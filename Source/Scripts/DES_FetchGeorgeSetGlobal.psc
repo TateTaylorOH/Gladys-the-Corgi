@@ -18,7 +18,7 @@ endEvent
 Event OnAnimationEvent(ObjectReference akSource, string asEventName)
 	if (akSource == Game.GetPlayer()) && (asEventName == "MRh_SpellFire_Event")
 		if Game.GetPlayer().HasLOS(Gladys) == false
-			Gladys.MoveTo(PlayerRef, 50, 0, 0, true)
+			Gladys.MoveTo(PlayerRef, -100, 50, 0, true)
 			(GetOwningQuest() as DES_GladysFollowerFramework).SetFollower(Gladys)
 		endif
 		Type.SetValue(1453)
