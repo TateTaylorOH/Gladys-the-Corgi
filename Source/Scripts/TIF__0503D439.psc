@@ -7,6 +7,7 @@ Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 (GetOwningQuest() as DES_GladysFollowerFramework).FollowerWait()
+akSpeaker.EvaluatePackage()
 ;END CODE
 EndFunction
 ;END FRAGMENT

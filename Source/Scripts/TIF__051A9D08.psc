@@ -6,9 +6,9 @@ Scriptname TIF__051A9D08 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-Type.SetValue(0)
 (self.GetOwningQuest() as DES_FetchItemTracker).UnregisterForUpdate()
 (self.GetOwningQuest() as DES_FetchItemTracker).RegisterForSingleUpdate(1)
+Type.SetValue(0)
 akSpeaker.EvaluatePackage()
 ;END CODE
 EndFunction

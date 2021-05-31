@@ -14,7 +14,7 @@ function OnLocationChange(location EastEmpireDock, location akNewLoc)
 
 	utility.Wait(600 as Float)
 	if SellerQuest.GetStageDone(10)
-		Seller.Disable
+		Seller.Disable()
 		SellerQuest.SetStage(255)
 	endIf
 endFunction

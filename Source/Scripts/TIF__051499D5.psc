@@ -10,8 +10,8 @@ akSpeaker.DropObject((self.GetOwningQuest() as DES_FetchItemTracker).Item, (self
 (self.GetOwningQuest() as DES_FetchItemTracker).FoundSomething = 0
 (self.GetOwningQuest() as DES_FetchItemTracker).IsSearching = false
 (self.GetOwningQuest() as DES_FetchItemTracker).UnregisterForUpdate()
-akSpeaker.EvaluatePackage()
 Type.SetValue(0)
+akSpeaker.EvaluatePackage()
 ;END CODE
 EndFunction
 ;END FRAGMENT

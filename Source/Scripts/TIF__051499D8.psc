@@ -9,16 +9,8 @@ Actor akSpeaker = akSpeakerRef as Actor
 Dog.ForceRefTo(akSpeaker as ObjectReference)
 (self.GetOwningQuest() as DES_FetchItemTracker).IsSearching = true
 (self.GetOwningQuest() as DES_FetchItemTracker).RegisterForSingleUpdate(25.0000)
-akSpeaker.EvaluatePackage()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_1
-Function Fragment_1(ObjectReference akSpeakerRef)
-Actor akSpeaker = akSpeakerRef as Actor
-;BEGIN CODE
 Type.SetValue(11)
+akSpeaker.EvaluatePackage()
 ;END CODE
 EndFunction
 ;END FRAGMENT

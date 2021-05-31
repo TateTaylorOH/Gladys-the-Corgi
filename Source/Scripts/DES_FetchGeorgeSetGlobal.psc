@@ -5,6 +5,7 @@ Scriptname DES_FetchGeorgeSetGlobal extends ReferenceAlias
 Actor Property PlayerRef Auto
 ReferenceAlias Property GladysAlias  Auto
 GlobalVariable Property Type Auto
+Actor Property Gladys  Auto
 
 ;-- Variables ---------------------------------------
 
@@ -15,8 +16,12 @@ Event OnInit()
 endEvent
  
 Event OnAnimationEvent(ObjectReference akSource, string asEventName)
-     if (akSource == Game.GetPlayer()) && (asEventName == "BeginCastRight")
-           Type.SetValue(1453)
-           GladysAlias.tryToEvaluatePackage()
-     endIf
+	if (akSource == Game.GetPlayer()) && (asEventName == "BeginCastRight")
+		if Game.GetPlayer().HasLOS(Gladys) == false
+			Gladys.MoveTo(PlayerRef, 50, 0, 0, true)
+			(GetOwningQuest() as DES_GladysFollowerFramework).SetFollower(Gladys)
+		endif
+		Type.SetValue(1453)
+		GladysAlias.tryToEvaluatePackage()
+	endIf
 endEvent
