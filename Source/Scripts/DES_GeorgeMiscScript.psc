@@ -25,7 +25,7 @@ EndEvent
 Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldContainer)
 	if akNewContainer
 		akNewContainer.removeItem(self, abSilent = true)
-		akNewContainer.addItem(GeorgeScroll)
+		akNewContainer.addItem(GeorgeScroll, abSilent = true)
 		Type.SetValue(0)
 		UnregisterForUpdate()
 	endIf
