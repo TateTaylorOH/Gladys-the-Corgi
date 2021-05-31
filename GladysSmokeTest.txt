@@ -1,0 +1,3 @@
+setstage DES_SellerQuest 10
+player.placeatme 09005900 
+player.additem 0921E40D 1
