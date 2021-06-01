@@ -12,7 +12,7 @@ So I present to you Gladys, a fierce working dog that will happily bite the heel
 -   A looting system that will allow Gladys to retrieve useful items from the surrounding environment.
 -   A home framework that will allow you to tell Gladys where to live when dismissed.
 -   The ability to play fetch!
--   Fully re-voiced sound effects using audio from my own pet corgis!\
+-   Fully re-voiced sound effects using audio from my own pet corgis!
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)
 
