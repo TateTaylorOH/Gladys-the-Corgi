@@ -1,5 +1,5 @@
-![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Gladys%20Banner.png)\
-![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/Xbox%20Tiny.png) Also available on Xbox One.
+![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Gladys%20the%20Corgi.png)\
+[![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/Xbox%20Tiny.png)](https://bethesda.net/en/mods/skyrim/mod-detail/4217662) Also available on [Xbox One](https://bethesda.net/en/mods/skyrim/mod-detail/4217662).
 
 I love corgis, they're the best. I have wanted to make a little corgi follower for the longest time but have been held back by my lack of assets. However, Adventurer1111 has recently added a corgi to his mode Dovahkiin Dogs and has been ever so nice to not only let me use his edited mesh but also buying me the rights to use it from the original authors!
 
