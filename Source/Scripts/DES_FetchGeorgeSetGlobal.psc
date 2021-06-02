@@ -11,31 +11,37 @@ Projectile Property GeorgeProjectile Auto
 
 ;-- Variables ---------------------------------------
 
-;objectReference CastFromHereRef
-;ObjectReference FlyingGeorge 
-;float RadiusToFindGeorge = 5000.0
+objectReference CastFromHereRef
+ObjectReference FlyingGeorge 
+float RadiusToFindGeorge = 5000.0
 
 ;-- Functions ---------------------------------------
 
 Event OnInit()
-    RegisterForAnimationEvent(Game.GetPlayer(), "MRh_SpellFire_Event")
+	RegisterForAnimationEvent(Game.GetPlayer(), "MRh_SpellFire_Event")
+	RegisterForAnimationEvent(Game.GetPlayer(), "BeginCastRight") 
 endEvent
  
 Event OnAnimationEvent(ObjectReference akSource, string asEventName)
 
-	if (akSource == Game.GetPlayer()) && (asEventName == "MRh_SpellFire_Event")
+	if (akSource == Game.GetPlayer()) && (asEventName == "BeginCastRight")
 
-	;CastFromHereRef = PlayerRef
-	;FlyingGeorge = Game.FindClosestReferenceOfTypeFromRef(GeorgeProjectile, CastFromHereRef, RadiusToFindGeorge)
-	;GeorgeAlias.ForceRefTo(FlyingGeorge)
+		CastFromHereRef = PlayerRef
+		FlyingGeorge = Game.FindClosestReferenceOfTypeFromRef(GeorgeProjectile, CastFromHereRef, RadiusToFindGeorge)
+		GeorgeAlias.ForceRefTo(FlyingGeorge)
+		GladysAlias.tryToEvaluatePackage()	
+
+	endif
+
+	if (akSource == Game.GetPlayer()) && (asEventName == "MRh_SpellFire_Event")
+		
+		Type.SetValue(1453)
+		GladysAlias.tryToEvaluatePackage()
 
 		if Game.GetPlayer().HasLOS(Gladys) == false
 			Gladys.MoveTo(PlayerRef, -100, 50, 0, true)
 			(GetOwningQuest() as DES_GladysFollowerFramework).SetFollower(Gladys)
 		endif
-
-		Type.SetValue(1453)
-		GladysAlias.tryToEvaluatePackage()
 
 	endIf
 
