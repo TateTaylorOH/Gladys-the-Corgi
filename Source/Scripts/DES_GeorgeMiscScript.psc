@@ -13,7 +13,7 @@ GlobalVariable Property Type  Auto
 
 Event OnInit()
     GeorgeAlias.ForceRefTo(Self)
-    RegisterForSingleUpdate(30) 
+    RegisterForSingleUpdate(30)
 EndEvent
 
 Event OnUpdate()
