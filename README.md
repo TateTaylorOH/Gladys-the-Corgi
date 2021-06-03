@@ -30,7 +30,7 @@ A merchant ship is added to the Solitude docks in front of the East Empire Compa
 
 **Assets Used**
 
-**Doggo LP** for the raw corgi model.\
+**Anna Vashchaeva** for the raw corgi model.\
 **Adventurer1111** for the converted corgi model taken from [Dovahkiin Dogs](https://www.nexusmods.com/skyrimspecialedition/mods/40885).\
 **sagittarius22** for the "fetch" scripts from [Useful Dogs](https://www.nexusmods.com/skyrimspecialedition/mods/1666).\
 **kelretu** for the George doll taken from [Additional Hearthfire Dolls](https://www.nexusmods.com/skyrimspecialedition/mods/46930).\
