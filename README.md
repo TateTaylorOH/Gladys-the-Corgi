@@ -16,7 +16,9 @@ So I present to you Gladys, a fierce working dog that will happily bite the heel
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Compatibility.png)
 
-This mod adds a merchant ship to the Solitude docks in front of the East Empire Company Warehouse. This ship is only there before purchasing Gladys from the merchant, afterward she will leave and take the ship with her. I carefully chose the location of this new ship to ensure that it wouldn't conflict with any of the popular Solitude mods.
+[Immersive Interactions](https://www.nexusmods.com/skyrimspecialedition/mods/47670)﻿ is supported out-of-the-box without need of any patches or MCM configurations.
+
+A merchant ship is added to the Solitude docks in front of the East Empire Company Warehouse. This ship is only there before purchasing Gladys from the merchant, afterward she will leave and take the ship with her. I carefully chose the location of this new ship to ensure that it wouldn't conflict with any of the popular Solitude mods.
  
 **Special Thanks**
 
@@ -28,7 +30,7 @@ This mod adds a merchant ship to the Solitude docks in front of the East Empire 
 
 **Assets Used**
 
-**Doggo LP** for the raw corgi model.\
+**Anna Vashchaeva** for the raw corgi model.\
 **Adventurer1111** for the converted corgi model taken from [Dovahkiin Dogs](https://www.nexusmods.com/skyrimspecialedition/mods/40885).\
 **sagittarius22** for the "fetch" scripts from [Useful Dogs](https://www.nexusmods.com/skyrimspecialedition/mods/1666).\
 **kelretu** for the George doll taken from [Additional Hearthfire Dolls](https://www.nexusmods.com/skyrimspecialedition/mods/46930).\
