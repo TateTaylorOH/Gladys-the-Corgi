@@ -10,11 +10,16 @@ objectreference property Seller auto
 
 ;-- Functions ---------------------------------------
 
-function OnLocationChange(location EastEmpireDock, location akNewLoc)
+Auto State Waiting
+    ;do nothing
+EndState
 
-	utility.Wait(600 as Float)
-	if SellerQuest.GetStageDone(10)
-		Seller.Disable()
-		SellerQuest.SetStage(255)
-	endIf
-endFunction
+State BoughtDog
+    Event OnLocationChange(Location akOldLoc, Location akNewLoc)
+        if(akOldLoc.isSameLocation(EastEmpireDock) && !akNewLoc.isSameLocation(EastEmpireDock))
+            utility.Wait(600.0)
+            Seller.Disable()
+            SellerQuest.SetStage(255)
+        endif
+    EndEvent
+EndState
