@@ -7,6 +7,8 @@ Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 Game.GetPlayer().AddItem(GeorgeScroll)
+SellerQuest.SetStage(10)
+akSpeaker.EvaluatePackage()
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -14,3 +16,5 @@ EndFunction
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
 Scroll Property GeorgeScroll  Auto
+
+Quest Property Sellerquest  Auto
