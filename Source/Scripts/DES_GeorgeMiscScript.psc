@@ -26,7 +26,6 @@ Event OnContainerChanged(ObjectReference akNewContainer, ObjectReference akOldCo
 	if akNewContainer
 		akNewContainer.removeItem(self, abSilent = true)
 		akNewContainer.addItem(GeorgeScroll, abSilent = true)
-		Type.SetValue(0)
 		UnregisterForUpdate()
 	endIf
 EndEvent
