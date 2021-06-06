@@ -21,7 +21,7 @@ EndEvent
 Event OnObjectUnequipped(Form akBase, ObjectReference akRef)
 	if akBase.HasKeyword(GeorgeKeyword)
 		Game.GetPlayer().UnequipItem(EmptyHand, true, true)
-		Game.GetPlayer().RemoveItem(EmptyHand)
+		Game.GetPlayer().RemoveItem(EmptyHand, 1, true)
 		;Debug.Notification("Player unequips Empty Hand!")
 	endif
 EndEvent
