@@ -30,7 +30,7 @@ sforzinda for Carys' tunic taken from Fashions of the Fourth Era.
 
 Gladys and Merlin as Gladys.
 
-Cora Despereaux as Carys Sundancer.
+CoraBoraBora as Carys Sundancer.
 
 ![](https://raw.githubusercontent.com/PierreDespereaux/PierreDespereaux/master/assets/images/banners/Gladys%20Voice%20Cast.jpg)\
 Pictured (left to right): Gladys the Pembroke Welsh Corgi and Merlin the Cardigan Welsh Corgi
