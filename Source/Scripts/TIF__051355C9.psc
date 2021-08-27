@@ -2,8 +2,8 @@
 ;NEXT FRAGMENT INDEX 2
 Scriptname TIF__051355C9 Extends TopicInfo Hidden
 
-;BEGIN FRAGMENT Fragment_1
-Function Fragment_1(ObjectReference akSpeakerRef)
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 HomeMarker.MoveTo(COCMarker)

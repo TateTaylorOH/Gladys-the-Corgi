@@ -6,14 +6,21 @@ ReferenceAlias Property GeorgeAlias  Auto
 Scroll Property GeorgeScroll  Auto  
 Actor Property Gladys  Auto
 GlobalVariable Property Type  Auto  
+Actor Property PlayerRef auto
+ReferenceAlias Property GladysAlais Auto
 
 ;-- Variables ---------------------------------------
 
 ;-- Functions ---------------------------------------
 
 Event OnInit()
-    GeorgeAlias.ForceRefTo(Self)
-    RegisterForSingleUpdate(30)
+GeorgeAlias.ForceRefTo(Self)
+Type.SetValue(1453)
+GladysAlais.tryToEvaluatePackage()
+	if PlayerRef.HasLOS(Gladys) == false
+		Gladys.MoveTo(PlayerRef, -50, 50, 0, true)
+	EndIf
+RegisterForSingleUpdate(30)
 EndEvent
 
 Event OnUpdate()
