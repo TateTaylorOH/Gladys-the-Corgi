@@ -15,4 +15,4 @@ EndFunction
 
 Formlist Property DogTreats  Auto
 
-Actor Property Stomach  Auto  
+Actor Property  Stomach  Auto  
