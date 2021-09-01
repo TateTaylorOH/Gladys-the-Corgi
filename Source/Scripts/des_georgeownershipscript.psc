@@ -26,4 +26,5 @@ EVENT OnItemAdded(Form akBaseItem, int aiItemCount, ObjectReference akItemRefere
 	IF DES_CorgiArmorEquipped.GetValue() == 1
 		DES_Gladys.SetOutfit(DES_GladysArmorGeorge)
 	ENDIF
+	RemoveInventoryEventFilter(DES_GeorgeScroll)
 ENDEVENT
