@@ -6,8 +6,7 @@ Scriptname TIF__0503D438 Extends TopicInfo Hidden
 Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-GladysAlias.AddInventoryEventFilter(DES_EmptyList as form)
-utility.Wait(0.1)
+GladysAlias.AddInventoryEventFilter(DES_GeorgeScroll)
 akSpeaker.OpenInventory(false)
 ;END CODE
 EndFunction
@@ -15,5 +14,6 @@ EndFunction
 
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
-formlist property DES_EmptyList auto
-referencealias property GladysAlias auto
+Scroll Property DES_GeorgeScroll auto
+
+ReferenceAlias Property GladysAlias auto

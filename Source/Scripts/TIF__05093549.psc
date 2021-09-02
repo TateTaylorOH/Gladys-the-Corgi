@@ -6,7 +6,9 @@ Scriptname TIF__05093549 Extends TopicInfo Hidden
 Function Fragment_2(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
-akspeaker.SetOutfit(CorgiNaked)
+GladysAlias.AddInventoryEventFilter(DES_EmptyList)
+akSpeaker.UnequipItem(DES_ArmoredGladys, true, true)
+akSpeaker.RemoveItem(DES_ArmoredGladys, 1, true)
 ArmorEquipped.SetValue(0)
 ;END CODE
 EndFunction
@@ -16,4 +18,8 @@ EndFunction
 
 GlobalVariable Property ArmorEquipped  Auto  
 
-Outfit Property CorgiNaked Auto
+Armor Property DES_ArmoredGladys Auto
+
+Formlist Property DES_EmptyList auto
+
+ReferenceAlias Property GladysAlias auto

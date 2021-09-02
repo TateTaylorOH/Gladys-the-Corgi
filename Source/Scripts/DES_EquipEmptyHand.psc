@@ -13,15 +13,15 @@ Keyword Property GeorgeKeyword Auto
 
 Event OnObjectEquipped(Form akBase, ObjectReference akRef)
 	if akBase.HasKeyword(GeorgeKeyword)
-		Game.GetPlayer().EquipItem(EmptyHand, true, true)
+		PlayerRef.EquipItem(EmptyHand, true, true)
 		;Debug.Notification("Player equips Empty Hand!")
 	endif	
 EndEvent
 
 Event OnObjectUnequipped(Form akBase, ObjectReference akRef)
 	if akBase.HasKeyword(GeorgeKeyword)
-		Game.GetPlayer().UnequipItem(EmptyHand, true, true)
-		Game.GetPlayer().RemoveItem(EmptyHand, 1, true)
+		PlayerRef.UnequipItem(EmptyHand, true, true)
+		PlayerRef.RemoveItem(EmptyHand, 1, true)
 		;Debug.Notification("Player unequips Empty Hand!")
 	endif
 EndEvent
