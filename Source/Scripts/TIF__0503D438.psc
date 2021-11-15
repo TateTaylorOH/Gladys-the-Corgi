@@ -7,7 +7,7 @@ Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 GladysAlias.AddInventoryEventFilter(DES_GeorgeScroll)
-akSpeaker.OpenInventory(false)
+GladysInventory.OpenInventory(true)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -17,3 +17,4 @@ EndFunction
 Scroll Property DES_GeorgeScroll auto
 
 ReferenceAlias Property GladysAlias auto
+Actor Property GladysInventory auto

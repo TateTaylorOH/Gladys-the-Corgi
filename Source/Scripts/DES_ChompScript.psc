@@ -14,6 +14,7 @@ Actor property PlayerRef auto
 
 Event OnItemAdded(Form akBaseItem, int aiItemCount, ObjectReference akItemReference, ObjectReference akSourceContainer)
 	Chomp.play(Gladys)
+	PlayerRef.DispelSpell(DES_GladysBlessing)
 	DES_GladysBlessing.Cast(PlayerRef)
 	DES_GladysBlessingMessage.Show()
 EndEvent

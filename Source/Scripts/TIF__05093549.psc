@@ -9,7 +9,6 @@ Actor akSpeaker = akSpeakerRef as Actor
 GladysAlias.AddInventoryEventFilter(DES_EmptyList)
 akSpeaker.UnequipItem(DES_ArmoredGladys, true, true)
 akSpeaker.RemoveItem(DES_ArmoredGladys, 1, true)
-ArmorEquipped.SetValue(0)
 ;END CODE
 EndFunction
 ;END FRAGMENT

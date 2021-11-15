@@ -8,7 +8,6 @@ Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 GladysAlias.AddInventoryEventFilter(DES_EmptyList)
 akspeaker.EquipItem(DES_BackpackGladys)
-DES_CorgiBackpackEquipped.SetValue(1)
 ;END CODE
 EndFunction
 ;END FRAGMENT
