@@ -9,7 +9,6 @@ GlobalVariable Property Type  Auto
 Actor Property PlayerRef auto
 ReferenceAlias Property GladysAlais Auto
 Quest Property DES_GladystheCorgi Auto
-Faction Property CurrentFollowerFaction auto
 Faction Property DES_GladysPlayerOwnershipFaction auto
 ObjectReference Property DESOCSResurrectGladys Auto
 
@@ -18,10 +17,7 @@ ObjectReference Property DESOCSResurrectGladys Auto
 ;-- Functions ---------------------------------------
 
 EVENT OnInit()
-Self.SetFactionOwner(DES_GladysPlayerOwnershipFaction)
 GeorgeAlias.ForceRefTo(Self)
-(DES_GladystheCorgi as DES_GladysFollowerFramework).SetFollower(Gladys)
-(DES_GladystheCorgi as DES_GladysFollowerFramework).FollowerFollow()
 	if (Game.IsPluginInstalled("Open Cities Skyrim.esp"))
 		DESOCSResurrectGladys.Enable()
 	endIf

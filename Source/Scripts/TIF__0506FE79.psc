@@ -7,6 +7,7 @@ Function Fragment_0(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 Game.GetPlayer().RemoveItem(GoldBase, 500)
+GetOwningQuest().SetStage(1)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -14,3 +15,5 @@ EndFunction
 ;END FRAGMENT CODE - Do not edit anything between this and the begin comment
 
 MiscObject Property GoldBase  Auto  
+
+ReferenceAlias Property Alias_Gladys Auto

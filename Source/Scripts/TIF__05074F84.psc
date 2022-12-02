@@ -16,6 +16,7 @@ Function Fragment_1(ObjectReference akSpeakerRef)
 Actor akSpeaker = akSpeakerRef as Actor
 ;BEGIN CODE
 Game.GetPlayer().RemoveItem(GoldBase, 300)
+GetOwningQuest().SetStage(1)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -24,3 +25,4 @@ EndFunction
 
 FavorDialogueScript Property pFDS  Auto  
 MiscObject Property GoldBase  Auto  
+ReferenceAlias Property Alias_Gladys Auto
