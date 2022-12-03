@@ -27,6 +27,7 @@ Type.SetValue(1453)
 GladysAlais.tryToEvaluatePackage()
 	IF PlayerRef.HasLOS(Gladys) == false
 		Gladys.Resurrect()
+		(DES_GladysTheCorgi as PetFramework_PetQuest).FollowPlayer(Gladys)
 		Gladys.MoveTo(PlayerRef, -50, 50, 0, true)
 	ENDIF
 RegisterForSingleUpdate(30)
