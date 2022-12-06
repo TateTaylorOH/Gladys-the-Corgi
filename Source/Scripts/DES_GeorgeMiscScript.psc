@@ -11,6 +11,7 @@ ReferenceAlias Property GladysAlais Auto
 Quest Property DES_GladystheCorgi Auto
 Faction Property DES_GladysPlayerOwnershipFaction auto
 ObjectReference Property DESOCSResurrectGladys Auto
+Faction Property PetFramework_PetFollowingFaction auto
 
 ;-- Variables ---------------------------------------
 
@@ -27,7 +28,9 @@ Type.SetValue(1453)
 GladysAlais.tryToEvaluatePackage()
 	IF PlayerRef.HasLOS(Gladys) == false
 		Gladys.Resurrect()
-		(DES_GladysTheCorgi as PetFramework_PetQuest).FollowPlayer(Gladys)
+		IF (Gladys.GetFactionRank(PetFramework_PetFollowingFaction) == 0)
+			(DES_GladysTheCorgi as PetFramework_PetQuest).FollowPlayer(Gladys)
+		ENDIF
 		Gladys.MoveTo(PlayerRef, -50, 50, 0, true)
 	ENDIF
 RegisterForSingleUpdate(30)
