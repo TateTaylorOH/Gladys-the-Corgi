@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+  "rules": [
+    {
+      "match": {
+        "formType": "Scroll",
+        "formId": "Gladys.esp|21E40D"
+      },
+      "assign": {
+        "iconSource": "I4IconAddon/icons.swf",
+        "iconLabel": "misc_toy",
+        "subTypeDisplay": "$Toy"
+      }
+    }
+  ]
+}
