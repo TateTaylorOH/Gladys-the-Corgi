@@ -23,10 +23,6 @@ Function Fragment_2()
 PlayerRef.AddItem(DES_GeorgeScroll)
 Alias_Seller.TryToEvaluatePackage()
 CleanupScript.GotoState("BoughtDog")
-(DES_GladystheCorgi as DES_FetchItemTracker).FoundSomething = 0
-(DES_GladystheCorgi as DES_FetchItemTracker).IsSearching = false
-(DES_GladystheCorgi as DES_FetchItemTracker).UnregisterForUpdate()
-Type.SetValue(0)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -58,5 +54,3 @@ Actor Property PlayerRef Auto
 Scroll Property DES_GeorgeScroll Auto
 
 Quest Property DES_GladystheCorgi  Auto  
-
-GlobalVariable Property Type  Auto  
