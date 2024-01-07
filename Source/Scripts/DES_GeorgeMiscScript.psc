@@ -10,7 +10,6 @@ Actor Property PlayerRef auto
 ReferenceAlias Property GladysAlias Auto
 Quest Property DES_GladystheCorgi Auto
 Faction Property DES_GladysPlayerOwnershipFaction auto
-ObjectReference Property DESOCSResurrectGladys Auto
 Faction Property PetFramework_PetFollowingFaction auto
 float gladysAngle = 180.0
 float gladysDistance = 256.0
