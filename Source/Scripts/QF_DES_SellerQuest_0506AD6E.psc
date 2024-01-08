@@ -17,16 +17,6 @@ ReferenceAlias Property Alias_Seller Auto
 ReferenceAlias Property Alias_Player Auto
 ;END ALIAS PROPERTY
 
-;BEGIN FRAGMENT Fragment_2
-Function Fragment_2()
-;BEGIN CODE
-PlayerRef.AddItem(DES_GeorgeScroll)
-Alias_Seller.TryToEvaluatePackage()
-CleanupScript.GotoState("BoughtDog")
-;END CODE
-EndFunction
-;END FRAGMENT
-
 ;BEGIN FRAGMENT Fragment_3
 Function Fragment_3()
 ;BEGIN CODE
@@ -39,6 +29,17 @@ EndFunction
 Function Fragment_0()
 ;BEGIN CODE
 Alias_Gladys.GetActorReference().SetFactionRank(PetFramework_PetFaction, 1)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_2
+Function Fragment_2()
+;BEGIN CODE
+PlayerRef.AddItem(DES_GeorgeScroll)
+Alias_Seller.TryToEvaluatePackage()
+CleanupScript.GotoState("BoughtDog")
+SetStage(11)
 ;END CODE
 EndFunction
 ;END FRAGMENT
