@@ -2,6 +2,11 @@
 ;NEXT FRAGMENT INDEX 5
 Scriptname QF_DES_SellerQuest_0506AD6E Extends Quest Hidden
 
+;BEGIN ALIAS PROPERTY Player
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Player Auto
+;END ALIAS PROPERTY
+
 ;BEGIN ALIAS PROPERTY Gladys
 ;ALIAS PROPERTY TYPE ReferenceAlias
 ReferenceAlias Property Alias_Gladys Auto
@@ -12,23 +17,10 @@ ReferenceAlias Property Alias_Gladys Auto
 ReferenceAlias Property Alias_Seller Auto
 ;END ALIAS PROPERTY
 
-;BEGIN ALIAS PROPERTY Player
-;ALIAS PROPERTY TYPE ReferenceAlias
-ReferenceAlias Property Alias_Player Auto
-;END ALIAS PROPERTY
-
 ;BEGIN FRAGMENT Fragment_3
 Function Fragment_3()
 ;BEGIN CODE
 stop()
-;END CODE
-EndFunction
-;END FRAGMENT
-
-;BEGIN FRAGMENT Fragment_0
-Function Fragment_0()
-;BEGIN CODE
-Alias_Gladys.GetActorReference().SetFactionRank(PetFramework_PetFaction, 1)
 ;END CODE
 EndFunction
 ;END FRAGMENT
@@ -39,7 +31,16 @@ Function Fragment_2()
 PlayerRef.AddItem(DES_GeorgeScroll)
 Alias_Seller.TryToEvaluatePackage()
 CleanupScript.GotoState("BoughtDog")
+DES_GladystheCorgi.Start()
 SetStage(11)
+;END CODE
+EndFunction
+;END FRAGMENT
+
+;BEGIN FRAGMENT Fragment_0
+Function Fragment_0()
+;BEGIN CODE
+Alias_Gladys.GetActorReference().SetFactionRank(PetFramework_PetFaction, 1)
 ;END CODE
 EndFunction
 ;END FRAGMENT
